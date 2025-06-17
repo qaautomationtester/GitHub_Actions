@@ -10,3 +10,9 @@ jobs:
             echo "Hello-Lady"
       - name: GoodBye
         run: echo "See-You"
+  basic1:
+    needs: basic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+        run: echo "Welcome Nishanth"
